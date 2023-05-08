@@ -5,10 +5,10 @@
 [Acceso - Spento 3]()  
 [Aperto - Chiuso 2]()  
 [Aperto - Chiuso 3]()  
-[Rotazione 2] ()  
-[Rotazione 3] ()  
-[Spostamento 2]  
-[Spostamento 3]  
+[Rotazione 2]()  
+[Rotazione 3]()  
+[Spostamento 2]()  
+[Spostamento 3]()  
 ## Esercizio 1B
 [Dittico]()  
 ## Esercizio 2A
