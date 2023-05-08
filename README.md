@@ -1,10 +1,10 @@
 # GIM_2023
 
 ## Esercizio 1A  
-[Acceso - Spento 2] () 
-[Acceso - Spento 3] ()  
+[Acceso - Spento 2]()   
+[Acceso - Spento 3]()  
 [Aperto - Chiuso 2]()  
-[Aperto - Chiuso 3]()
+[Aperto - Chiuso 3]()  
 [Rotazione 2] ()  
 [Rotazione 3] ()  
 [Spostamento 2]  
