@@ -1,9 +1,7 @@
-let flakes = [];
+let flakes = []; //crea array
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-
-
+  createCanvas(windowWidth,windowHeight);
 }
 
 function draw() {
@@ -30,17 +28,3 @@ function draw() {
     }
   }
 }
-
-
-
-	// non si possono avere due variabili identiche
-//	spessore = random(1,3)
-//	lunghezza = random(20,100)
-//	posX = random(0,width) 
-//	posY = random(-100,height)
-	
-
-//	stroke(255)
-//	strokeWeight(spessore)
-//	line(posX,posY,posX,posY + lunghezza)
-
