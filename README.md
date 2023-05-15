@@ -16,5 +16,7 @@
 ## Esercizio 2B
 [Motion]()  
 ## Esercizio 3
-[Pong]()  
+[Pong]()
+[Pioggia]()
+[Neve](https://larobernasconi.github.io/GIM_2023/Esercizio_3/Pioggia)
 ## Esercizio 4
