@@ -12,7 +12,7 @@
 ## Esercizio 1B
 [Dittico]()  
 ## Esercizio 2A
-[Forma e senso]()  
+[Forma e senso](https://larobernasconi.github.io/GIM_2023/Esercizio_2A)  
 ## Esercizio 2B
 [Motion]()  
 ## Esercizio 3
