@@ -1,4 +1,4 @@
-# GIM_2023
+# GIM
 
 ## Esercizio 1A  
 [Acceso - Spento 2]()   
