@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="Lara Bernasconi" />
+	<title>2B</title>
+	<style type="text/css">
+		html{
+			height:100%;
+		}
+		body{
+			background-color: rgb(235,235,235);
+		}
+		div{ 
+ width:100%; 
+ height:100vh; 
+ position:relative; 
+} 
+canvas{ 
+ position:absolute; 
+ top:0;bottom:0;right:0;left:0; 
+ margin:auto; 
+} 
+		
+	</style>
+</head>
+<body>
+	<canvas id="" width=400 height=400></canvas>
+	<script type="module">
+
+		import Sequencer from './js/sequencer.min.js';
+
+		Sequencer.make({
+			canvas       	 : document.querySelector("#sx"),
+			from         	 : "img/shot001.png",
+			to           	 : "img/shot0058.png",
+			direction        : "x",
+			playMode         : "hover",
+			loop         	 : "loop",
+		})
+	
+
+	</script>
+</body>
+</html>
