@@ -14,7 +14,7 @@
 ## Esercizio 2A
 [Forma e senso](https://larobernasconi.github.io/GIM/Esercizio_2A)  
 ## Esercizio 2B
-[Dizzy](https://larobernasconi.github.io/GIM/Esercizio_2B)  
+[Dizzy](https://larobernasconi.github.io//Esercizio_2B)  
 ## Esercizio 3
 [Pong]()    
 [Pioggia](https://larobernasconi.github.io/GIM/Esercizio_3/Pioggia)    
