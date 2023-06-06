@@ -22,7 +22,7 @@
 ## Esercizio 4
 [Orologio](https://larobernasconi.github.io/GIM/Esercizio_4/Barbour)  
 
-###Barbour
+Barbour
 
 Il progetto si basa sull'idea della teoria di James Barbour, lo stesso sostiene che il tempo non esiste come entità fisica indipendente, ma è invece una relazione tra gli oggetti e gli eventi che accadono nell'universo. 
 
