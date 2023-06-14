@@ -1,30 +1,28 @@
-let flakes = []; //crea array
-
-function setup() {
-  createCanvas(windowWidth,windowHeight);
+function setup(){
+	createCanvas(windowWidth, windowHeight, WEBGL)
 }
 
-function draw() {
-  background(0);
-  if (frameCount % 10 === 0) {
-    let flake = {
-      x: random(width),
-      y: -10,
-      size: random(5, 20),
-      speed: random(1, 3)
-    };
-    flakes.push(flake);
-  }
-  for (let i = flakes.length - 1; i >= 0; i--) {
-    let flake = flakes[i];
-    flake.y += flake.speed;
+function draw(){
+	
+	background(0,0,0)
 
-    stroke(255);
-    strokeWeight(flake.size);
-    point(flake.x, flake.y);
+	rotateX(mouseY*0.01)
+	rotateY(mouseX*0.01)
 
-    if (flake.y > height) {
-      flakes.splice(i, 1);
-    }
-  }
+	let lato = 500
+
+	if (mouseIsPressed) randomSeed(0)
+	
+	stroke(255)
+	noFill()
+	beginShape(LINES)
+	for(let i=0; i<1000; i=i+1){
+		let lunghezza = random(20, 100)
+		let posX = random(-lato, lato)
+		let posY = random(-lato, lato)
+		let posZ = random(-lato, lato)
+		vertex(posX, posY, posZ)
+		vertex(posX, posY + lunghezza, posZ)
+	}
+	endShape()
 }
