@@ -1,28 +1,39 @@
-speedx = 1
-speedy = 1
+let xpos, ypos;
+let xspeed = 2.8;
+let yspeed = 2.2;
+let xdirection = 1;
+let ydirection = 1;
+let rad = 100
+
 function setup() {
-createCanvas(windowWidth, windowHeight, WEBGL);
+createCanvas(windowWidth, windowHeight);
+noStroke()
+frameRate(100)
+ellipseMode(RADIUS)
+xpos = width/2
+ypos = height/2
+
 }
 
 function draw() {
-background(0,0,0);
+  colorMode(HSB);
 
-let lato = 400;
+  let hue = map(frameCount, 0, 360, 0, 360);
+  let saturation = map(frameCount, 0, 360, 50, 100);
+  let brightness = map(frameCount, 0, 360, 50, 100);
 
-noStroke();
-fill(255);
+  fill(hue, saturation, brightness);
 
-for (let i=0; i<100; i++) {
-  let size = random(1, 5);
-  let posX = random(-lato, lato);
-  let posY = random(-lato, lato);
-  let posZ = random(-lato, lato);
+  background(200);
+  xpos = xpos + xspeed * xdirection;
+  ypos = ypos + yspeed * ydirection;
+  
+  if (xpos > width - rad || xpos < rad) {
+    xdirection *= -1;
+  }
+  if (ypos > height - rad || ypos < rad) {
+    ydirection *= -1;
+  }
 
-  push();
-  translate(posX, posY, posZ);
-  rotate(speedx * frameCount, [1, 0, 0]);
-  rotate(speedy * frameCount, [0, 1, 0]);
-  ellipse(0, 0, size, size * 1);
-  pop();
-}
+  ellipse(xpos, ypos, rad, rad);
 }

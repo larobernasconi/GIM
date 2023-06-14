@@ -1,28 +1,43 @@
-function setup(){
-	createCanvas(windowWidth, windowHeight, WEBGL)
+const snowflakes = [];
+const ground = [];
+
+const minSpeed = 1;
+const maxSpeed = 5;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  noSmooth();
+  stroke(255);
+  fill(255);
+
+  for(let i = 0; i < 100; i++){
+    snowflakes.push(createVector(
+      random(width), random(height),
+      random(minSpeed, maxSpeed)));
+  }
+
+  for(let x = 0; x < width; x++) {
+    ground[x] = height;
+  }
 }
 
-function draw(){
-	
-	background(0,0,0)
+function draw() {
+  background(0);
 
-	rotateX(mouseY*0.01)
-	rotateY(mouseX*0.01)
+  for(const snowflake of snowflakes) {
+    snowflake.y += snowflake.z;
 
-	let lato = 500
+    rect(snowflake.x, snowflake.y, 1, 1);
 
-	if (mouseIsPressed) randomSeed(0)
-	
-	stroke(255)
-	noFill()
-	beginShape(LINES)
-	for(let i=0; i<1000; i=i+1){
-		let lunghezza = random(20, 100)
-		let posX = random(-lato, lato)
-		let posY = random(-lato, lato)
-		let posZ = random(-lato, lato)
-		vertex(posX, posY, posZ)
-		vertex(posX, posY + lunghezza, posZ)
-	}
-	endShape()
+    if(snowflake.y >= ground[floor(snowflake.x)]) {
+      ground[floor(snowflake.x)]--;
+
+      snowflake.x = random(width);
+      snowflake.y = 0;
+    }
+  }
+
+  for(let x = 0; x < width; x++) {
+    rect(x, ground[x], 1, height - ground[x]);
+  }
 }
