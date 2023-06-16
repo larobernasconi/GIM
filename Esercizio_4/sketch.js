@@ -5,11 +5,11 @@ function setup() {
   }
   
   function draw() {
-	background(200);
+	background(0);
   
 	let snapshot = int(random(1000000));
 	if (mouseIsPressed) {
-	  textSize(32);
+	  textSize(25);
 	  fill(255);
 	  textFont('Helvetica');
 	  textStyle(BOLD)
