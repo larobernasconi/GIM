@@ -3,7 +3,7 @@
 ## Esercizio 1A  
 [Acceso - Spento 2](https://larobernasconi.github.io/GIM/Esercizio_1A/acceso_spento_2)   
 [Acceso - Spento 3](https://larobernasconi.github.io/GIM/Esercizio_1A/acceso_spento_3)  
-[Aperto - Chiuso 2](https://larobernasconi.github.io/GIM/Esercizio_1A/aperto_chiuso_2)  
+[Aperto - Chiuso 2](https://larobernasconi.github.io/GIM/Esercizio_1A/aperto_chiuso_2%20.html)   
 [Aperto - Chiuso 3](https://larobernasconi.github.io/GIM/Esercizio_1A/aperto_chiuso_3)  
 [Rotazione 2](https://larobernasconi.github.io/GIM/Esercizio_1A/rotazione_2)  
 [Rotazione 3](https://larobernasconi.github.io/GIM/Esercizio_1A/rotazione_3)  
